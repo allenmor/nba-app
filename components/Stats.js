@@ -82,7 +82,7 @@ function Stats() {
         <Text style={[styles.cell, styles.playerName]}>{item.name}</Text>
         <Text style={styles.cell}>{item.position}</Text>
         <Text style={styles.cell}>{item.age}</Text>
-        <Text style={{ color: "blue" }}>{item.team}</Text>
+        <Text style={{ color: "blue", width: 50, textAlign:'center' }}>{item.team}</Text>
         <Text style={styles.cell}>{item.gamesPlayed}</Text>
         <Text style={styles.cell}>{item.gamesStarted}</Text>
         <Text style={styles.cell}>{item.minutesPerGame}</Text>
@@ -230,6 +230,7 @@ const styles = StyleSheet.create({
     flex: 1,
     textAlign: "center",
     width: 50, // Add a fixed width
+
   },
   playerName: {
     fontWeight: "bold",

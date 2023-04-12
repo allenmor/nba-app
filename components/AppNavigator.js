@@ -24,6 +24,8 @@ const AppNavigator = () => {
                 iconName = focused ? 'home' : 'home-outline';
               } else if (route.name === 'Standings') {
                 iconName = focused ? 'list' : 'list-outline';
+              }  else if (route.name === 'Stats') {
+                iconName = focused ? 'list' : 'list-outline';
               }
   
               return <Ionicons name={iconName} size={size} color={color} />;
